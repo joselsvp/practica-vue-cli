@@ -6,10 +6,15 @@
   <div v-for="(item, index) in servicios" :key="index">
      {{index + 1}} - {{item}}
   </div>
+  <AccionSaldo/>
 </template>
 
 <script>
+import AccionSaldo from './AccionSaldo.vue'
 export default {
+  components: {
+    AccionSaldo
+  },
   data() {
     return {
       saldo: 1000,
